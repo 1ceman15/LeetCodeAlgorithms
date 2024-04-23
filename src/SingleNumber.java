@@ -1,5 +1,7 @@
 
 //https://leetcode.com/problems/single-number/
+
+//Use XOR
 public class SingleNumber {
     public int singleNumber(int[] nums) {
         int number = nums[0];
