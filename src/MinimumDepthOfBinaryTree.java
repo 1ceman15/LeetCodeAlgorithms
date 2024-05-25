@@ -25,7 +25,7 @@ public class MinimumDepthOfBinaryTree {
             int depth = depthStack.pop();
 
             if(node.left == null && node.right == null) {
-                answer = answer > depth ? depth : answer;
+                answer = Math.min(answer, depth);
             }
             if(node.right != null){
                 stack.add(node.right);
