@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
 /*
 StringBuilder передается по ссылке, и при изменении, он изменяется на всех уровнях рекурсии
 Поэтому нужно откатывать StringBuilder после каждого рекурсивного вызова функции
