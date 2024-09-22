@@ -31,13 +31,4 @@ public class CombinationSum {
 
     }
 
-    public static void main(String[] args) {
-        CombinationSum c = new CombinationSum();
-
-        c.combinationSum(new int[]{2,3,6,7},7);
-        System.out.println(c.result);
-    }
-
-
-
 }
