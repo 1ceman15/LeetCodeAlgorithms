@@ -8,11 +8,11 @@ public class Permutations {
     List<List<Integer>> result = new ArrayList<>();
     public List<List<Integer>> permute(int[] nums) {
 
-        helper(0, nums);
+        backtracking(0, nums);
         return result;
     }
 
-    private void helper(int i, int[] nums){
+    private void backtracking(int i, int[] nums){
         if(i == nums.length){
             List<Integer> perm = new ArrayList<>();
             for(int num: nums){
@@ -24,7 +24,7 @@ public class Permutations {
 
         for(int idx = i; idx< nums.length; idx++){
             swap(idx,i,nums);
-            helper(i+1, nums);
+            backtracking(i+1, nums);
             swap(idx,i,nums);
         }
         return;
