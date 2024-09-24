@@ -49,10 +49,4 @@ public class LetterCombinationsPhoneNumber {
 
     }
 
-    public static void main(String[] args) {
-        LetterCombinationsPhoneNumber l = new LetterCombinationsPhoneNumber();
-        l.letterCombinations("23");
-        System.out.println(l.result);
-    }
-
 }
