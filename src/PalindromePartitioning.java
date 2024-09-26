@@ -86,10 +86,4 @@ public class PalindromePartitioning {
 
     }
 
-    public static void main(String[] args) {
-        PalindromePartitioning p = new PalindromePartitioning();
-        p.partition("aab");
-        System.out.println(p.result);
-
-    }
 }
