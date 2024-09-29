@@ -44,12 +44,13 @@ public class LongestIncreasingSubsequence {
                     }
                 }
                 tails[left] = x;
-                if (left == size) {
+               if (left == size) {
                     size++;
                 }
             }
 
             return size;
         }
+
 
 }
