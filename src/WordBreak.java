@@ -29,9 +29,6 @@ public class WordBreak {
 
     }
 
-    public static void main(String[] args) {
-        wordBreak( "cars", Arrays.stream(new String[]{"car","ca","rs"}).toList());
-    }
 }
 
 
