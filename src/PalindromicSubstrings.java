@@ -35,40 +35,39 @@ public class PalindromicSubstrings {
 
         for (int i = 0; i < s.length(); i++) {
             //Нечетная длинна
-            int HalfLen = Math.min(i,s.length()-i-1);
+            int HalfLen = Math.min(i, s.length() - i - 1);
             int left = 0;
             int right = HalfLen;
             int mid = right;
             while (left <= right) {
                 int start = i - mid;
                 int end = i + mid;
-                if(isPalindrome(s, start, end)) {
+                if (isPalindrome(s, start, end)) {
                     left = mid + 1;
                     HalfLen = mid;
-                }else right = mid - 1;
+                } else right = mid - 1;
                 mid = (left + right) / 2;
 
             }
-            answer+=HalfLen;
+            answer += HalfLen;
 
 
             //Четная длинна
-            HalfLen = Math.min(i,s.length()-i);
+            HalfLen = Math.min(i, s.length() - i);
             left = 0;
             right = HalfLen;
             mid = right;
             while (left <= right) {
                 int start = i - mid;
-                int end = i + mid-1 >=0? i+mid-1 : 0;
-                if(isPalindrome(s, start, end)) {
+                int end = i + mid - 1 >= 0 ? i + mid - 1 : 0;
+                if (isPalindrome(s, start, end)) {
                     left = mid + 1;
                     HalfLen = mid;
-                }else right = mid - 1;
+                } else right = mid - 1;
                 mid = (left + right) / 2;
 
             }
-            answer+=HalfLen;
-
+            answer += HalfLen;
 
 
         }
