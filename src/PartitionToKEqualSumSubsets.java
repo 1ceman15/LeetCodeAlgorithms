@@ -10,7 +10,7 @@ public class PartitionToKEqualSumSubsets {
         for (int num : nums) {
             target += num;
         }
-        if(target % k != 0)
+        if (target % k != 0)
             return false;
 
         target = target / k;
@@ -19,24 +19,24 @@ public class PartitionToKEqualSumSubsets {
 
         Arrays.sort(nums);
 
-        return backtracking(nums, sums, target,nums.length-1);
+        return backtracking(nums, sums, target, nums.length - 1);
 
     }
 
     public boolean backtracking(int[] nums, int[] sums, int target, int index) {
-        if(index <= 0)
+        if (index < 0)
             return true;
 
-        for (int i = 0; i < sums.length ; i++) {
-            if(sums[i] + nums[index] > target){
+        for (int i = 0; i < sums.length; i++) {
+            if (sums[i] + nums[index] > target) {
                 continue;
             }
             sums[i] += nums[index];
-            if(backtracking(nums, sums, target, index-1))
+            if (backtracking(nums, sums, target, index - 1))
                 return true;
 
             sums[i] -= nums[index];
-            if(sums[i] == 0)
+            if (sums[i] == 0)
                 break;
         }
 
@@ -44,6 +44,4 @@ public class PartitionToKEqualSumSubsets {
 
 
     }
-
-
 }
