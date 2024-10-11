@@ -36,8 +36,5 @@ public class BestTimeToBuyAndSellStockWiithCooldown {
         return maxProfit[len - 1];
     }
 
-    public static void main(String[] args) {
-        BestTimeToBuyAndSellStockWiithCooldown bst = new BestTimeToBuyAndSellStockWiithCooldown();
-        bst.maxProfit(new int[]{1,2,3,0,2});
-    }
+
 }
