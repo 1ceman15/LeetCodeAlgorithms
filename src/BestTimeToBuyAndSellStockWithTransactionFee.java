@@ -12,8 +12,6 @@ public class BestTimeToBuyAndSellStockWithTransactionFee {
         for (int price : prices) {
             if (price < min) min = price;
             else if (price > min + fee) {
-                // sell at price that bought at price `min`/
-                // with transaction fee.
                 profit += (price - min - fee);
                 min = price - fee;
             }
