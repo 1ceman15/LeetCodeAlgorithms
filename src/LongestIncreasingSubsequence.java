@@ -23,7 +23,6 @@ public class LongestIncreasingSubsequence {
         for(int i : dp){
             max = Math.max(max, i);
         }
-        System.out.println(Arrays.toString(dp));
         return max;
 
     }
