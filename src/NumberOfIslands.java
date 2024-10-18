@@ -9,7 +9,7 @@ public class NumberOfIslands {
 
     boolean[][] visited;
 
-    int[][] coords = new int[][]{{0,1},{1,0},{0,-1},{-1,0}};
+    final int[][] coords = new int[][]{{0,1},{1,0},{0,-1},{-1,0}};
 
     public int numIslands(char[][] grid) {
         int answer = 0;
