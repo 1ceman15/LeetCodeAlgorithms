@@ -11,7 +11,7 @@ import java.util.List;
 public class PacificAtlanticOceanFlow {
     List<List<Integer>> answer =new ArrayList<>();
 
-    final int[][] coords = new int[][]{{0,1},{1,0},{0,-1},{-1,0}};
+    final int[][] coords = new int[][]{{0,1},{0,-1},{1,0},{-1,0}};
 
 
     public List<List<Integer>> pacificAtlantic(int[][] heights) {
@@ -29,7 +29,7 @@ public class PacificAtlanticOceanFlow {
 
         for (int i = 0; i < heights.length; i++) {
             bfs(heights, pacific, i, 0, heights[i][0]);
-            bfs(heights, atlantic, i, heights[0].length - 1, heights[heights[0].length - 1][i]);
+            bfs(heights, atlantic, i, heights[0].length - 1, heights[i][heights[0].length - 1]);
 
 
         }
@@ -53,7 +53,6 @@ public class PacificAtlanticOceanFlow {
         if(i < 0 || j < 0 || i >= heights.length || j >= heights[i].length || heights[i][j] < prev)
             return;
 
-        int[] now = new int[]{i,j};
 
         if(visited[i][j])
             return;
@@ -69,9 +68,5 @@ public class PacificAtlanticOceanFlow {
 
 
     }
-
-
-
-
 
 }
