@@ -24,9 +24,4 @@ public class PeakIndexInMountainArray {
         return left;
     }
 
-
-    public static void main(String[] args) {
-        PeakIndexInMountainArray p = new PeakIndexInMountainArray();
-        System.out.println(p.peakIndexInMountainArray(new int[]{24,69,100,99,79,78,67,36,26,19}));
-    }
 }
