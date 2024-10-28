@@ -3,7 +3,8 @@
 import java.util.HashSet;
 import java.util.List;
 
-public class WordSearch {
+public class
+WordSearch {
     public static boolean exist(char[][] board, String word) {
         HashSet<List<Integer>> set = new HashSet<>();
 
