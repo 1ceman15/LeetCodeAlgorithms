@@ -47,9 +47,4 @@ public class FourSum {
     }
 
 
-    public static void main(String[] args) {
-        FourSum fourSum = new FourSum();
-        List<List<Integer>> result = fourSum.fourSum(new int[]{2, 2, 2, 2, 2}, 8);
-        System.out.println(result);
-    }
 }
