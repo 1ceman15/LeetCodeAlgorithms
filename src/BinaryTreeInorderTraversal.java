@@ -9,6 +9,7 @@ public class BinaryTreeInorderTraversal {
     public List<Integer> inorderTraversal(TreeNode root) {
 
 
+        Traversal(root);
 
         return list;
     }
@@ -20,4 +21,6 @@ public class BinaryTreeInorderTraversal {
         list.add(root.val);
         inorderTraversal(root.right);
     }
+
+
 }
