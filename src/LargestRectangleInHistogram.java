@@ -25,8 +25,6 @@ public class LargestRectangleInHistogram {
 
 
 
-
-
         return answer;
 
     }
