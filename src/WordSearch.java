@@ -5,8 +5,7 @@ import java.util.List;
 
 public class
 WordSearch {
-    public static boolean exist(char[][] board, String word) {
-        HashSet<List<Integer>> set = new HashSet<>();
+    public boolean exist(char[][] board, String word) {
 
         int[] freq = new int[58];
 
@@ -17,7 +16,7 @@ WordSearch {
         }
 
         for (int i = 0; i < word.length(); i++) {
-            if (--freq[word.charAt(i) - 'A'] <= 0)
+            if (--freq[word.charAt(i) - 'A'] < 0)
                 return false;
         }
 
@@ -36,7 +35,7 @@ WordSearch {
     }
 
 
-    public static boolean DFS(char[][] board, String word, int index, int row, int col) {
+    public boolean DFS(char[][] board, String word, int index, int row, int col) {
         if (index == word.length())
             return true;
 
