@@ -8,7 +8,6 @@ public class BinaryTreeInorderTraversal {
     List<Integer> list = new ArrayList<>();
     public List<Integer> inorderTraversal(TreeNode root) {
 
-
         Traversal(root);
 
         return list;
