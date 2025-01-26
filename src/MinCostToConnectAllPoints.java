@@ -39,8 +39,4 @@ public class MinCostToConnectAllPoints {
         return result;
     }
 
-    public static void main(String[] args) {
-        int[][] p = new int[][]{{3,1}, {1,0},{7,7},{5,5}};
-        minCostConnectPoints(p);
-    }
 }
