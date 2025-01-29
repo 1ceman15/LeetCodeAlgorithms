@@ -1,6 +1,8 @@
 import java.util.*;
 
 //https://neetcode.io/problems/foreign-dictionary
+
+//Kahn's Algorithm
 public class AlienDictionary {
     public String foreignDictionary(String[] words) {
         HashMap<Character, HashSet<Character>> nei = new HashMap<>();
