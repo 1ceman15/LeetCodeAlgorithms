@@ -36,8 +36,4 @@ public class CountSubarraysWithMedianK {
         return count;
     }
 
-    public static void main(String[] args) {
-        CountSubarraysWithMedianK sol = new CountSubarraysWithMedianK();
-        System.out.println(sol.countSubarrays(new int[]{3, 2, 1, 4, 5}, 4)); // Выводит 3
-    }
 }
