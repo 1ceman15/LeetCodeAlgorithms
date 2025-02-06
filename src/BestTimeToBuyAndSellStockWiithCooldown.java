@@ -37,4 +37,19 @@ public class BestTimeToBuyAndSellStockWiithCooldown {
     }
 
 
+//    public int maxProfit(int[] prices) {
+//        int sold = Integer.MIN_VALUE; //sold → Прибыль, если продали акцию в этот день.
+//        int cool = Integer.MIN_VALUE; // cool → Прибыль, если купили акцию в этот день.
+//        int reset = 0;//reset → Прибыль, если ничего не делали (ждали).
+//
+//        for(int i : prices){
+//            int prev = sold;
+//            sold = cool + i;
+//            cool = Math.max(cool, reset - i);
+//            reset = Math.max(reset, prev);
+//        }
+//        return Math.max(sold, reset);
+//    }
+
+
 }
