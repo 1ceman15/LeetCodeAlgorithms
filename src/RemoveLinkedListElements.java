@@ -1,7 +1,7 @@
 
 //https://leetcode.com/problems/remove-linked-list-elements/description/
 
-public class RemoveElement {
+public class RemoveLinkedListElements{
     public ListNode removeElements(ListNode head, int val) {
         ListNode dummy = new ListNode();
         dummy.next = head;
