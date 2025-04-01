@@ -1,6 +1,7 @@
 import java.util.HashMap;
 
-public class CountSubarraysWithMedianK {
+public class
+CountSubarraysWithMedianK {
     public int countSubarrays(int[] nums, int k) {
         int posIndex = -1;
 

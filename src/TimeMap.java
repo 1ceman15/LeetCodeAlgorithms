@@ -27,7 +27,7 @@ class TimeMap {
         int right = values.size() - 1;
         String result = "";
 
-        while (left <= right) {
+        while (left <=   right) {
             int mid = (right + left) / 2;
             if (values.get(mid).getTime() <= timestamp) {
                 result = values.get(mid).getValue();
