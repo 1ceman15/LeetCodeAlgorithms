@@ -23,7 +23,7 @@ public class MaxConsecutiveOnes2 {
            maxOnes = Math.max(maxOnes, i - left +1 );
         }
 
-        maxOnes = Math.max(maxOnes, nums.length - left +1 );
+        maxOnes = Math.max(maxOnes, nums.length - left);
 
         return maxOnes;
     }
